@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-top: 20px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin: 0;
+  text-decoration: underline;
+  font-size: 36px;
+}
+
+.header h1:hover {
+  text-decoration: none;
+}
+
+.header__button {
+  color: gray;
+  background-color: white;
+  border: gray .5px solid;
+  width: 70px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.header__anchor {
+  padding-top: 7px;
+  color: gray;
+  font-size: 18px;
+}
+
+.header form {
+  position: relative;
+  margin-top: 5px;
+}
+
+.header form span {
+  position: absolute;
+  left: -34px;
+  top: 3px;
+  color: gray;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: #e6e6e1 1px solid;
+  padding-top: 15px;
+  overflow-x: auto;
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar a {
+  padding: 8px !important;
+  color: gray;
+  font-size: 18px;
+}
+
+.div1 {
+  background-color: #212529 !important;
+  height: auto;
+  padding: 6vw;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.div1__h1 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin: 0;
+  text-align: left;
+  font-style: italic;
+  width: 50%;
+  font-size: 48px;
+}
+
+.div1__para {
+  color: white;
+  text-align: left;
+  width: 50%;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.div1__anchor {
+  font-size: 20px;
+  color: white;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .div1__h1 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .div1__para {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    padding-left: 6vw ;
+    padding-right: 6vw ;
+    padding-top: 20px;
+}
+@mixin anchor-style {
+    color: gray;
+    font-size:18px;
+}
+@mixin heading-style {
+    font-family: 'Playfair Display', serif;
+    font-weight:600;    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    h1{
+        @include heading-style();
+        margin: 0;
+        text-decoration: underline;
+        font-size: 36px;
+    }
+    h1:hover{
+        text-decoration: none;
+    }
+    &__button{
+        color: gray;
+        background-color: white;
+        border: gray .5px solid;
+        width:70px;
+        height: 30px;
+        border-radius: 4px;
+    }
+    &__anchor{
+        padding-top: 7px;
+        @include anchor-style();
+    }
+    form{
+        position: relative;
+        margin-top: 5px;
+        span{
+            position: absolute;
+            left: -34px;
+            top: 3px;
+            color: gray;
+        }
+    }
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-top: #e6e6e1 1px solid;
+    padding-top: 15px;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    a{
+        padding:8px !important;
+        @include anchor-style();
+    }
+}
+.div1{
+    background-color: #212529!important;
+    //width: 100%;
+    height: auto;
+    padding:6vw;
+    border-radius: 4px;
+    margin-top: 10px;
+    &__h1{
+        color: white;
+        @include heading-style();
+        margin: 0;
+        text-align: left;
+        font-style: italic;
+        width: 50%;
+        font-size: 48px;
+    }
+    &__para{
+        color: white;
+        text-align: left;
+        width: 50%;
+        line-height: 24px;
+        font-size: 20px;
+    }
+    &__anchor{
+        font-size: 20px;
+        color: white;
+        font-weight: 800;
+    }
+}
+@media (max-width:768px){
+    .div1{
+        &__h1{
+            width: fit-content;
+        }
+        &__para{
+            width: fit-content;
+        }
+    }
+}
