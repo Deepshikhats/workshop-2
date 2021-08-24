@@ -317,11 +317,23 @@ main{
         }
         &--table{
             width:100%;
+            border-collapse: collapse;
             thead{
                 text-align: left;
             }
+            th {
+              padding: 10px;
+              border-bottom: rgb(24, 23, 23) .5px solid;
+            }
             td{
-                border-bottom: black 1px solid;
+                padding: 10px;
+                border-bottom: rgb(222, 226, 230) 1px solid;
+            }
+            tfoot{
+                td{
+                    padding: 10px;
+                    border-top: black 1.3px solid;
+                }
             }
         }
     }

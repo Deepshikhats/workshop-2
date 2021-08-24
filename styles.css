@@ -348,14 +348,26 @@ main {
 
 .article2__div1--table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .article2__div1--table thead {
   text-align: left;
 }
 
+.article2__div1--table th {
+  padding: 10px;
+  border-bottom: #181717 0.5px solid;
+}
+
 .article2__div1--table td {
-  border-bottom: black 1px solid;
+  padding: 10px;
+  border-bottom: #dee2e6 1px solid;
+}
+
+.article2__div1--table tfoot td {
+  padding: 10px;
+  border-top: black 1.3px solid;
 }
 
 .article3 {
