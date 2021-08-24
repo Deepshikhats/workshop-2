@@ -7,19 +7,21 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="header" id="header_content">
             <a class="header__anchor" href="#">Subscribe</a>
-            <h1>Large</h1>
+            <a class="h1-anchor" href="#"><h1>Large</h1></a>
             <form action="#">
+                <a href="#">
                 <span class="material-icons">search</span>
-                <button class="header__button">Sign up</button>
+                <button class="header__button" type="button">Sign up</button>
+                </a>
             </form>
         </div>
         <nav class="navbar">
@@ -38,12 +40,205 @@
         </nav>
     </header>
     <main>
-        <div class="div1">
-            <h1 class="div1__h1">Title of a longer featured blog post</h1>
-            <p class="div1__para">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-            <a class="div1__anchor" href="#">Continue reading...</a>
-        </div>
+        <section class="section1">
+            <h1 class="section1__h1">Title of a longer featured blog post</h1>
+            <p class="section1__para">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+            <a class="section1__anchor" href="#">Continue reading...</a>
+        </section>
+        <section class="section2">
+            <div class=section2__box onclick="location.href='#top'"  style="cursor: pointer;">
+                <div class="box_content">
+                    <h3 id="leftbox--h3">World</h3>
+                    <h1>Featured post</h1>
+                    <time>Nov 12</time>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Continue reading</a></a>
+                </div>
+                <div class="thumbnail">Thumbnail</div>
+            </div>
+            <div class="section2__box" onclick="location.href='#top'"  style="cursor: pointer;">
+                <div class="box_content">
+                    <h3 id="rightbox--h3">Design</h3>
+                    <h1>Post title</h1>
+                    <time>Nov 11</time>
+                    <p>This is a wider card with supporting text below as a natural lead-in to additional content</p>
+                    <a href="#">Continue reading</a></a>
+                </div>
+                <div class="thumbnail">Thumbnail</div>
+            </div>
+        </section>
+        <section class="section3">
+            <div id="div1">
+                <h2 class="section3__heading">From the Firehose</h2>
+                <article class="article1">
+                    <h1 class="article1__title">Sample blog post</h1>
+                    <div class="article1__time"><time>January 1, 2021 by </time><a href="#top">Mark</a></div>
+                    <p class="article1__para">This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+                    <hr>
+                    <p class="article1__para">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <div class="article1__div1">
+                        <h1 class="article1__div1--h1">Blockquotes</h1>
+                        <p class="article1__div1--para">This is an example blockquote in action:</p>
+                        <h4 class="article1__div1--h4">Quoted text goes here.</h4>
+                        <p class="article1__div1--para">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    </div>
+                    <div class="article1__div2">
+                        <h1 class="article1__div2--h1">Example lists</h1>
+                        <p class="article1__div2--para">This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                        <ul class="article1__div2--unlist">
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ul>
+                        <h5 class="article1__div2--h5">And this is an ordered list:</h5>
+                        <ol class="article1__div2--orlist">
+                            <li>First list item</li>
+                            <li>Second list item with a longer description</li>
+                            <li>Third list item to close it out</li>
+                        </ol>
+                        <p>And this is a definiton list:</p>
+                        <dl>
+                            <dt class="article1__div2--dt">HyperText Markup Language (HTML)</dt>
+                            <dd class="article1__div2--dd">The language used to describe and define the content of a Web page</dd>
+                            <dt class="article1__div2--dt">Cascading Style Sheets (CSS)</dt>
+                            <dd class="article1__div2--dd">Used to describe the appearance of Web content</dd>
+                            <dt class="article1__div2--dt">JavaScript (JS)</dt>
+                            <dd class="article1__div2--dd">The programming language used to build advanced Web sites and applications</dd>
+                        </dl>
+                    </div>
+                    <div class="article1__div3">
+                        <h1 class="article1__div3--h1">Inline HTML elements</h1>
+                        <p class="article1__div3--para">HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="#">Mozilla Developer Network.</a></p>
+                        <ul class="article1__div3--list">
+                            <li><strong>To bold text</strong>, use <span>&lt; strong &gt;</span>.</li>
+                            <li><em>To italicize text</em>, use <span>&lt; em &gt;</span>.</li>
+                            <li>Abbreviations, like <abbr>HTML</abbr> should use &lt; abbr &gt;, with an optional <span>title</span> attribute for the full phrase.</li>
+                            <li>Citations, like <cite>— Mark Otto</cite>, should use <span>&lt; cite &gt;</span>.</li>
+                            <li><del>Deleted</del> text should use <span>&lt; del &gt;</span> and <ins>inserted</ins> text should use <span>&lt; ins &gt;</span>.</li>
+                            <li>Superscript <sup>text</sup> uses <span>&lt;sup&gt;</span> and subscript <sub>text</sub> uses <span>&lt; sub &gt;.</li>
+                        </ul>
+                
+                        <p class="article1__div3--para">Most of these elements are styled by browsers with few modifications on our part.</p>
+                    </div>
+                    <div class="article1__div4">
+                        <h1 class="article1__div4--h1">Heading</h1>
+                        <p class="article1__div4--para">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <h1 class="article1__div4--h2">Sub-heading</h1>
+                        <p class="article1__div4--para">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <code>Example code block</code>
+                        <p class="article1__div4--para3">This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </div>
+                </article>
+                <article class="article2">
+                    <h1 class="article2__title">Another blog post</h1>
+                    <div class="article2__time"><time>December 23, 2020</time> by <a href="#">Jacob</a></div>
+                    <p class="article2__para">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <p class="article2__para">Longer quote goes here, maybe with some <strong>emphasized text</strong> text in the middle of it.</p>
+                    <p class="article2__para">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <div class="article2__div1">
+                        <h1 class="article2__div1--h1">Example table</h1>
+                        <p class="article2__div1--para">And don't forget about tables in these posts:</p>
+                        <table class="article2__div1--table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Upvotes</th>
+                                    <th>Downvotes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>Bob</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Charlie</td>
+                                    <td>7</td>
+                                    <td>9</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>Totals</td>
+                                    <td>21</td>
+                                    <td>23</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <p class="article2__div1--para">This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                    </div>
+                </article>
+                <article class="article3">
+                    <h1 class="article3__title">New feature</h1>
+                    <div class="article3__time"><time>December 14, 2020</time> by <a href="#">Chris</a></div>
+                    <p class="article3__para">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                    <ul class="article3__list">
+                        <li>First list item</li>
+                        <li>Second list item with a longer description</li>
+                        <li>Third list item to close it out</li>
+                    </ul>
+                    <p class="article3__para">This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                </article>
+                <div>
+                    <a id="button__anchor" href="#">
+                        <button class="button" type="button">Older</button>
+                        <button class="button2" type="button">Newer</button>
+                    </a>
+                </div>
+            </div>
+            <aside class="aside">
+                <div class="aside__div1">
+                    <h2 class="aside__div1--heading">About</h2>
+                    <p>Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                </div>
+                <div class="aside__div2">
+                    <h2 class="aside__div2--heading">Archives</h2>
+                    <nav>
+                        <a class="aside--anchor" href="#top">
+                            <ul class="aside__div2--list">
+                                <li>March 2021</li>
+                                <li>February 2021</li>
+                                <li>January 2021</li>
+                                <li>December 2020</li>
+                                <li>November 2020</li>
+                                <li>October 2020</li>
+                                <li>September 2020</li>
+                                <li>August 2020</li>
+                                <li>July 2020</li>
+                                <li>June 202</li>
+                                <li>May 2020</li>
+                                <li>April 2020</li>
+                            </ul>
+                        </a>
+                    </nav>
+                </div>
+                <div class="aside__div3">
+                    <h2 class="aside__div3--heading">Elsewhere</h2>
+                    <nav>
+                        <a class="aside--anchor" href="#top">
+                            <ul class="aside__div3--list">
+                                <li>Github</li>
+                                <li>Twitter</li>
+                                <li>Facebook</li>
+                            </ul>
+                        </a>
+                    </nav>         
+                </div>
+            </aside>
+        </section>
     </main>
+        <footer class="footer">
+            <p>Blog template built for <a href="#top">Bootstrap</a> by <a href=#top>@mdo.</a></p>
+            <p><a href="#top">Back to top</a></p>
+        </footer>
+        
+    
     
 </body>
 </html>
